@@ -1,6 +1,6 @@
-﻿using Tyuiu.FedorovaDA.Sprint2.Task2.V15.Lib;
+﻿using Tyuiu.FedorovaDA.Sprint2.Task4.V17.Lib;
 
-namespace Tyuiu.FedorovaDA.Sprint2.Task2.V15
+namespace Tyuiu.FedorovaDA.Sprint2.Task4.V17
 {
     internal class Program
     {
@@ -12,40 +12,33 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task2.V15
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор if – полная и короткая форма записи                      *");
-            Console.WriteLine("* Задание #3                                                              *");
-            Console.WriteLine("* Вариант #15                                                             *");
+            Console.WriteLine("* Тема: Тернарный оператор                                                *");
+            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Вариант #17                                                             *");
             Console.WriteLine("* Выполнила: Федорова Дарья Артемовна | АСОиУб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры  *");
-            Console.WriteLine("* и вычисляет находится ли точка с координатами X,Y                       *");
-            Console.WriteLine("* в заштрихованной области.                                               *");
+            Console.WriteLine("* Написать программу, которая вычисляет требуемое значение                *");
+            Console.WriteLine("* с использованием тенарного оператора,                                   *");
+            Console.WriteLine("* где пользователь вводит значение переменной X, Y с клавиатуры.          *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите значение X:");
+            Console.WriteLine("Введите значение переменной X:");
             int x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите значение Y:");
+            Console.WriteLine("Введите значение переменной Y:");
             int y = Convert.ToInt32(Console.ReadLine());
 
-            bool res = ds.CheckDotInShadedArea(x, y);
+            double res = ds.Calculate(x, y);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            if (res)
-            {
-                Console.WriteLine("Точка находится в заштихованной области");
-            }
-            else
-            {
-                Console.WriteLine("Точка не находится в заштрихованной области");
-            }
+            Console.WriteLine("Значение функции = " + res);
             Console.ReadKey();
         }
     }
