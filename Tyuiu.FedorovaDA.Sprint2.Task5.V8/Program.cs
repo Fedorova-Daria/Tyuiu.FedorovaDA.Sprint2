@@ -41,7 +41,7 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8
             {
                 a = "Дата предыдущего дня - " +  ds.FindDateOfPreviousDay(m, n);
             }
-            if ((n > 1) || (n < 32))
+            if ((n < 1) || (n > 32))
             {
                 a = "Введенно неверное значение";
             }

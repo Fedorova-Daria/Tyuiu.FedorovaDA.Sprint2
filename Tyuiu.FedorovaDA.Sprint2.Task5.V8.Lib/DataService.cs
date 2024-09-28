@@ -11,43 +11,43 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8.Lib
             switch (m)
             {
                 case 1:
-                    a ="Января";
+                    a ="01";
                     break;
                 case 2:
-                    a ="Февраля";
+                    a ="02";
                     break;
                 case 3:
-                    a ="Марта";
+                    a ="03";
                     break;
                 case 4:
-                    a ="Апреля";
+                    a ="04";
                     break;
                 case 5:
-                    a ="Мая";
+                    a ="05";
                     break;
                 case 6:
-                    a ="Июня";
+                    a ="06";
                     break;
                 case 7:
-                    a ="Июля";
+                    a ="07";
                     break;
                 case 8:
-                    a ="Августа";
+                    a ="08";
                     break;
                 case 9:
-                    a ="Сентября";
+                    a ="09";
                     break;
                 case 10:
-                    a ="Октября";
+                    a ="10";
                     break;
                 case 11:
-                    a ="Ноября";
+                    a ="11";
                     break;
                 case 12:
-                    a ="Декабря";
+                    a ="12";
                     break;
                 default:
-                    throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {m}");
+                    throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
 
             }
             if ((n > 1) && (n < 32))
@@ -58,7 +58,7 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8.Lib
             {
                 Console.WriteLine("Число дня задано некорректно. Введите число от 2 до 31");
             }
-            return  n + " " + a;
+            return  n + "." + a;
         }
     }
 }
