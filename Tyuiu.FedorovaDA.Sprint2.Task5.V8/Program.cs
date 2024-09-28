@@ -26,14 +26,14 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Введите месяц:");
-            int m = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Введите день: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int m = Convert.ToInt32(Console.ReadLine());
 
             string a;
 
-            if ((m < 1) || (m > 12))
+            if ((n < 1) || (n > 12))
             {
                 a = "Введенно неверное значение";
             }
@@ -41,7 +41,7 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8
             {
                 a = "Дата предыдущего дня - " +  ds.FindDateOfPreviousDay(m, n);
             }
-            if ((n < 1) || (n > 32))
+            if ((m < 1) || (m > 32))
             {
                 a = "Введенно неверное значение";
             }

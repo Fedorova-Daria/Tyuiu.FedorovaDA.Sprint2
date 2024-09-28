@@ -9,28 +9,28 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8.Test
         {
             DataService ds = new DataService();
 
-            int n = 2;
+            int m = 2;
 
-            Assert.AreEqual("1.01", ds.FindDateOfPreviousDay(1, n));
-            Assert.AreEqual("1.02", ds.FindDateOfPreviousDay(2, n));
-            Assert.AreEqual("1.03", ds.FindDateOfPreviousDay(3, n));
-            Assert.AreEqual("1.04", ds.FindDateOfPreviousDay(4, n));
-            Assert.AreEqual("1.05", ds.FindDateOfPreviousDay(5, n));
-            Assert.AreEqual("1.06", ds.FindDateOfPreviousDay(6, n));
-            Assert.AreEqual("1.07", ds.FindDateOfPreviousDay(7, n));
-            Assert.AreEqual("1.08", ds.FindDateOfPreviousDay(8, n));
-            Assert.AreEqual("1.09", ds.FindDateOfPreviousDay(9, n));
-            Assert.AreEqual("1.10", ds.FindDateOfPreviousDay(10, n));
-            Assert.AreEqual("1.11", ds.FindDateOfPreviousDay(11, n));
-            Assert.AreEqual("1.12", ds.FindDateOfPreviousDay(12, n));
+            Assert.AreEqual("1.01", ds.FindDateOfPreviousDay(m, 1));
+            Assert.AreEqual("1.02", ds.FindDateOfPreviousDay(m, 2));
+            Assert.AreEqual("1.03", ds.FindDateOfPreviousDay(m, 3));
+            Assert.AreEqual("1.04", ds.FindDateOfPreviousDay(m, 4));
+            Assert.AreEqual("1.05", ds.FindDateOfPreviousDay(m, 5));
+            Assert.AreEqual("1.06", ds.FindDateOfPreviousDay(m, 6));
+            Assert.AreEqual("1.07", ds.FindDateOfPreviousDay(m, 7));
+            Assert.AreEqual("1.08", ds.FindDateOfPreviousDay(m, 8));
+            Assert.AreEqual("1.09", ds.FindDateOfPreviousDay(m, 9));
+            Assert.AreEqual("1.10", ds.FindDateOfPreviousDay(m, 10));
+            Assert.AreEqual("1.11", ds.FindDateOfPreviousDay(m, 11));
+            Assert.AreEqual("1.12", ds.FindDateOfPreviousDay(m, 12));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindDateOfPreviousDay(-1, 1);
+                ds.FindDateOfPreviousDay(1, -1);
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindDateOfPreviousDay(13, 32);
+                ds.FindDateOfPreviousDay(32, 13);
             });
             
         }

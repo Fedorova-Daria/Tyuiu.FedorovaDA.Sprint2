@@ -8,7 +8,7 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8.Lib
         {
             string a;
 
-            switch (m)
+            switch (n)
             {
                 case 1:
                     a ="01";
@@ -50,15 +50,15 @@ namespace Tyuiu.FedorovaDA.Sprint2.Task5.V8.Lib
                     throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
 
             }
-            if ((n > 1) && (n < 32))
+            if ((m > 1) && (m < 32))
             {
-                n = n - 1;
+                m = m - 1;
             }
             else
             {
                 Console.WriteLine("Число дня задано некорректно. Введите число от 2 до 31");
             }
-            return  n + "." + a;
+            return  m + "." + a;
         }
     }
 }
